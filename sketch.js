@@ -70,7 +70,11 @@ function draw() {
   
   playerArcher.display();
   computerArcher.display()
-  
+
+ if(keyCode === 32){
+     arrow.display()
+     arrow.shoot(playerArcher.body.angle);
+     } 
   // if(keyCode === 32){
   //   arrow.display()
   //   arrow.shoot(playerArcher);
